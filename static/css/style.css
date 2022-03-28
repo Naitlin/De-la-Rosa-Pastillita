@@ -1,0 +1,166 @@
+:root {
+    --element-hidden: 32;
+}
+
+@font-face {
+    font-family: Roboto-Thin;
+    src: url('../fonts/Roboto-Thin.ttf');
+}
+@font-face {
+    font-family: Roboto-Regular;
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: SF-Pro;
+    src: url('../fonts/SF-Pro.otf');
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url('../fonts/Avenir.ttc');
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    /*font-family: 'Roboto-Regular';*/
+    font-family: 'Muli', sans-serif;
+}
+
+#root {
+    background-color: rgba(0, 0, 0, 0);
+    position: relative;
+    height: 100%;
+    padding-top: 5%;
+    /* padding-bottom: 10%; */
+}
+
+#header-bienvenida {
+    /* display: none; */
+    /*font-family: 'Roboto-Thin';*/
+    font-family: 'Merriweather', serif;
+    font-weight: 100;
+    position: relative;
+    padding-top: 15%;
+    font-weight: 100;
+    padding-bottom: 25%;
+    text-align: center;
+    color: #f5f5f5;
+    height: 100%;
+}
+
+.col {
+    padding-bottom: 10px;
+}
+
+.elm-oculto {
+    visibility: hidden;
+    display: none;
+    height: 0;
+}
+
+#general-content, #especifico-content {
+    /* height: 100%; */
+    /* overflow-y: auto; */
+    max-height: 25%;
+    width: 100%;
+}
+
+.btn-menu {
+    right: 4%;
+    z-index: 3;
+    float: right;
+}
+
+.btn-diagnosticar {
+    right: 4%;
+    top: 0.75rem;
+    z-index: 4;
+    float: right;
+}
+
+.sintoma-nombre, .enfermedad-nombre {
+    font-family: 'Merriweather', serif;
+    /*font-family: 'Roboto-Regular';*/
+}
+
+#manual-content {
+    height: 80%;
+}
+
+#alert-minimo {
+    z-index: 5;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.logo-sistema {
+    display: block;
+    width: 150px;
+    height: auto;
+    margin: 1em auto;
+}
+
+h1, h2, h3, h4, h5, h6, .blue-text {
+    color: #1680AD;
+    font-family: 'Merriweather', serif !important;
+}
+
+body, p {
+    color: #2f3640;
+    font-family: 'Muli', sans-serif;
+}
+
+.green-color{
+    color: #6ACDBB!important;
+  }
+
+.alturita{
+    height: 60px;
+}
+/*
+.card-input-element:checked+.card::after {
+    content: '\e5ca';
+    color: #AFB8EA;
+    font-family: 'Material Icons';
+    font-size: 24px;
+    -webkit-animation-name: fadeInCheckbox;
+    animation-name: fadeInCheckbox;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    margin-right: 2em;
+}
+*/
+
+
+@media only screen and (min-width: 768px) {
+
+    .icon_info_enfermedad, .icon_info_enfermedad:hover, .icon_info_enfermedad:focus {
+        text-decoration: none;
+        color: #1680AD;
+        font-weight: bold;
+        font-size: 1.1em;
+    }
+    
+    #sintomas-container-general .list-group-item, #sintomas-container-especifico .list-group-item {
+        width: 40%;
+        display: inline-block;
+        margin: 0 2.5% 1.5em 2.5%;
+    
+    }
+
+}

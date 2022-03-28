@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Muli:300" rel="stylesheet">
+    <!-- <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'> -->
+    <!-- Font Awesome icons-->
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/material-icons.css">
+    <link rel="stylesheet" href="./css/material.min.css">
+    <link rel="stylesheet" href="./css/buttons-as-cards.css">
+    <link rel="stylesheet" href="./css/background.css">
+    <link rel="stylesheet" href="./css/slider.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Trastornos Respiratorios</title>
+</head>
+
+<body>
+    <main id="root">
+
+        <h1 id="header-bienvenida" class="">Bienvenido</h1>
+
+        <div id="manual-content" class="container elm-oculto">
+            <div class="row">
+                <div class="col">
+                    <div class="card d-flex border-0">
+                        <div class="card-body align-content-center align-items-center">
+
+                            <div class="text-center mt-3 mb-4">
+                                <h4 class="card-title">Sistema Computacional De Aprendizaje Automático Para Atención Centrada Y Diagnóstico De Pacientes Con Enfermedades Neumológicas</h4>
+                                <img class="logo-sistema" src="assets/PILL.png" alt="Sistema de Diagnóstico">
+                                <h5>Fisco Christian, Quintero Milena, Vera Angelica.</h5>
+                            </div>
+
+                            <div style="display: flex;">
+    
+                                <div class="px-3 py-4" style="flex:1;background-color: #dcdde1; border: 1px solid rgba(0, 0, 0, 0.1);width: 80%;margin: auto;font-size: 1.2rem;">
+                                    <p class="card-text">El siguiente sistema pretende
+                                        auxiliar en la integración de un diagnóstico aportando una probabilidad de certeza.</p>
+                                    <p class="card-text">Los dos tipos de diagnósticos que maneja el sistema son el diagnóstico
+                                        general y el diagnóstico específico.</p>
+                                    <p>En el caso que su padecimiento se caracterice por ataques o crisis en medio de periodos de relativa normalidad (como en el caso del asma), enfatice los sintomas que presente durante los ataques o crisis.</p>
+                                </div>
+                                
+                                <img src="assets/pngwing.com-duo.png" class="p-4 d-none d-lg-block" style="width: 100%; max-width: 320px;">
+
+                            </div>
+                            
+                            <div class="container" style="padding-top: 5%; padding-bottom: 5%;">
+                                <div class="row">
+                                    <div class="col col-lg-6 col-md-6 col-sm-6">
+                                        <div id="boton-ir-general" class="clickable card d-flex" role='button'>
+                                            <div class="clickable card-body align-content-center align-items-center text-center">
+                                                <h5 class="card-title blue-text">Diagnóstico general</h5>
+                                                <p class="card-text">El diagnóstico general busca obtener los datos del
+                                                    usuario de acuerdo a la intensidad de los síntomas que presenta el
+                                                    usuario.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-6 col-md-6 col-sm-6">
+                                        <div id="boton-ir-especifico" class="clickable card d-flex" role='button'>
+                                            <div class="card-body align-content-center align-items-center text-center">
+                                                <h5 class="card-title blue-text">Diagnóstico específico</h5>
+                                                <p class="card-text">El diagnóstico específico compara la intensidad de
+                                                    los síntomas que presenta el usuario con las enfermedades que él
+                                                    cree poder tener.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="menu-content" class="container elm-oculto">
+            <div class="card border-0 shadow">
+                <div class="card-body">
+                    <div>
+                        <button id="regresar-a-bienvenida" type="button" class="btn btn-primary mb-4"><i class="fas fa-undo"></i> Volver a Bienvenido</button>
+                    </div>
+                    <h2 class="card-title text-center">Seleccione el diagnóstico que desea probar</h1>
+                        <div class="row">
+                            <div style="padding-top: 20px;" class="col col-md-6 col-lg-6 col-sm-6">
+                                <!-- <label class="d-flex align-items-center align-content-center"> -->
+                                <label class="d-flex justify-content-center">
+                                    <input type="radio" name="tipo-diagnostico" id="radio-general" class="d-none" />
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <p class="card-text">General</p>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div style="padding-top: 20px;" class="col col-md-6 col-lg-6 col-sm-6">
+                                <!-- <label class="d-flex align-items-center align-content-center"> -->
+                                <label class="d-flex justify-content-center">
+                                    <input type="radio" name="tipo-diagnostico" id="radio-especifico" class="d-none" />
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <p class="card-text">Específico</p>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-12 my-5 text-center">
+                                <img style="width: 100%;max-width: 480px;" src="assets/pngwing.com - team.png" alt="Esta app no es un remplazo para un diagnóstico médico profesional.">
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="general-content" class="elm-oculto container">
+            <div class="row">
+                <div class="col">
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+                            <button class="btn btn-menu" id="boton-menu-general">Menú</button>
+                            <h1 class="card-title">Diagnóstico general</h1>
+                            <p class="card-text">
+                                De acuerdo a los siguientes síntomas, escoja la intensidad de cada uno
+                            </p>
+                            <div class="general-container mt-5">
+                                <div id="sintomas-container-general" class="sintomas-container list-group d-block"></div>
+                            </div>
+                            <button class="btn btn-diagnosticar my-3" id="boton-diagnosticar-general"
+                                onclick="evaluacionGeneral()" data-toggle="modal"
+                                data-target="#modalResultados">Diagnosticar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="especifico-content" class="container elm-oculto">
+            <div class="row">
+                <div class="col-11 mb-4">
+                    <div class="card border-0 shadow">
+                        <div class="card-body especifico-enfermedades">
+
+                            <button class="btn btn-menu" id="boton-menu-especifico">Menú</button>
+                            <h1 class="card-title">Diagnóstico específico</h1>
+
+                            <div class="alert alert-danger alert-dismissible fade show elm-oculto" role="alert" id="alert-minimo">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <p>Los diagnósticos específicos son comparativos. Selecciona al menos 2 enfermedades para ver cual cuadra mejor con tus sintomas.</p>
+                            </div>
+
+                            <div class="especifico-container" id="especifico-container-enfermedades">
+                                <p class="mensaje-especifico">Seleccione las enfermedades que desea evaluar:</p>
+                                <div id="enfermedades-container"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-11">
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+
+                            <div class="especifico-container" id="especifico-container-sintomas">
+                                <p class="mensaje-especifico mb-5">De acuerdo a los siguientes síntomas, escoja la intensidad de cada una:</p>
+                                <div id="sintomas-container-especifico" class="sintomas-container d-block"></div>
+                            </div>
+
+                            <button class="btn btn-diagnosticar my-3" id="boton-diagnosticar-especifico"
+                                onclick="evaluacionEspecifica()" data-toggle="modal"
+                                data-target="#modalResultados">Diagnosticar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal" id="modalResultados" tabindex="-1" role="dialog" aria-labelledby="modalResultadosLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">Resultados</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body" id="modal-resultados">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quae earum laboriosam accusamus
+                        sit, iste ipsum nam. Corrupti debitis eum fugiat amet. Accusamus eligendi dicta necessitatibus
+                        fugiat, harum dolor sapiente!
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- <script src="https://jquery.googleapis.com/jquery/3.3.1/jquery.min.js"></script> -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./css/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/enfermedades.js"></script>
+    <script src="./js/main.js" onload="main()"></script>
+</body>
+
+</html>
